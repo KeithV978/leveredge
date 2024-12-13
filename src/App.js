@@ -8,12 +8,10 @@ import { Footer } from "./components/footer";
 import { JoinUs } from "./components/joinus";
 import ScrollToTop from "./components/scrollToTop";
 import { About } from "./components/about";
-// import { Roadmap } from "./components/roadmap";
 
 function App() {
   document.title = "LeverEdgeAI - Welcome";
   return (
-    // <div style={{}}>
     <Container
       sx={{
         position: "relative",
@@ -24,7 +22,6 @@ function App() {
         <Hero />
         <About />
         <Features />
-        {/* <Roadmap /> */}
         <JoinUs />
       </main>
       <Footer />

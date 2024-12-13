@@ -1,12 +1,12 @@
 import React from "react";
-import { LogoWrapper, StyledList, Wrapper } from "./styles";
+import { LogoWrapper, Wrapper } from "./styles";
 import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
 import Divider from "@mui/material/Divider";
-import IconButton from "@mui/material/IconButton";
-import Telegram from "@mui/icons-material/Telegram";
-import X from "@mui/icons-material/X";
+// import IconButton from "@mui/material/IconButton";
+// import Telegram from "@mui/icons-material/Telegram";
+// import X from "@mui/icons-material/X";
 import logo from "../../assets/images/logo/logo.jpg";
 
 export const Footer = () => {

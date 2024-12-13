@@ -1,9 +1,9 @@
 import React from "react";
 import {
   ImageWrapper,
-  Item,
-  ItemBody,
-  ItemHeader,
+  // Item,
+  // ItemBody,
+  // ItemHeader,
   SubTitle,
   TitleBar,
   Wrapper,
