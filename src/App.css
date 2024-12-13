@@ -1,0 +1,45 @@
+* {
+  transition: all ease-in 0.3s;
+  background-repeat: no-repeat;
+}
+body {
+  background-color: #01020e;
+  color: #ccc;
+  max-width: 1524px;
+  margin: 0 auto;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: inline-block;
+  width: 100%;
+}
+@keyframes clockrotate {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
+@keyframes anticlockrotate {
+  from {
+    rotate: 360deg;
+  }
+  to {
+    rotate: 0deg;
+  }
+}
+@keyframes scaler {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 0.5;
+  }
+  100% {
+    scale: 1;
+  }
+}
