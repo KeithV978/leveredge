@@ -14,7 +14,10 @@ export const JoinUs = () => {
     // <div>
     <Wrapper>
       <Box sx={{ width: { sm: "40%", xs: "100%" } }}>
-        <Typography variant="h3" sx={{ textAlign: "left" }}>
+        <Typography
+          variant="h3"
+          sx={{ textAlign: { sm: "left", xs: "center" } }}
+        >
           Join Us{" "}
           <span
             style={{
@@ -28,7 +31,13 @@ export const JoinUs = () => {
             Today
           </span>
         </Typography>
-        <Title variant="h6" sx={{ textAlign: "left" }}>
+        <Title
+          variant="body2"
+          sx={{
+            textAlign: { sm: "left !important", xs: "center" },
+            padding: "1rem 0",
+          }}
+        >
           Stay connected with us by joining us on our socials!
         </Title>
       </Box>

@@ -4,6 +4,7 @@ import Typography from "@mui/material/Typography";
 
 export const Wrapper = styled("section")(({ theme }) => ({
   margin: "5rem 1rem",
+  padding: "1rem 2rem",
   textAlign: "center",
   justifyContent: "space-between",
   backgroundColor: "#443f527d",
@@ -14,7 +15,7 @@ export const Wrapper = styled("section")(({ theme }) => ({
   //   height: "50vh",
   // boxShadow: "inset 0 0 0 1000px rgba(0,0,0,.4)",
   position: "relative",
-
+  minHeight: "300px",
   "&::after": {
     content: '" "',
     borderRadius: "50%",
@@ -29,6 +30,7 @@ export const Wrapper = styled("section")(({ theme }) => ({
   },
   [theme.breakpoints.up("sm")]: {
     padding: "4rem 6rem",
+    minHeight: "150px",
     flexDirection: "row",
     backgroundSize: "100%",
     borderRadius: "20px",

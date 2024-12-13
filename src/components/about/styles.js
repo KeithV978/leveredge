@@ -2,14 +2,14 @@ import { styled } from "@mui/material";
 import Typography from "@mui/material/Typography";
 
 export const Wrapper = styled("section")(({ theme }) => ({
-  minHeight: "200px",
+  minHeight: "400px",
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
   alignItems: "center",
   [theme.breakpoints.up("sm")]: {
     flexDirection: "row",
-    justifyContent: "space-between",
+    justifyContent: "right",
   },
 }));
 export const TitleBar = styled(Typography)(({ theme }) => ({
@@ -21,8 +21,14 @@ export const TitleBar = styled(Typography)(({ theme }) => ({
   marginBottom: "1rem",
   color: `${[theme.palette.primary.main]}`,
 }));
-export const SubTitle = styled(Typography)(({ theme }) => ({}));
+export const SubTitle = styled(Typography)(({ theme }) => ({
+  marginBottom: "1rem",
+}));
 
 export const ImageWrapper = styled("div")(({ theme }) => ({
-  width: "30%",
+  width: "15%",
+  display: "none",
+  [theme.breakpoints.up("sm")]: {
+    display: "block",
+  },
 }));

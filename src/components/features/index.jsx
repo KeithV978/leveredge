@@ -4,25 +4,28 @@ import {
   FeaturesCard,
   FeaturesCardWrapper,
   ImageHolder,
+  TitleBar,
   Wrapper,
 } from "./styles";
 // import { Button } from "../button";
-import { SubTitle, TitleBar } from "../about/styles";
+import { SubTitle } from "../about/styles";
 import { Typography } from "@mui/material";
 
 // images
-import comm from "../../assets/images/comm.jpg";
-import analysis from "../../assets/images/analysis.jpg";
-import cross from "../../assets/images/cross.jpg";
-import risk from "../../assets/images/risk.jpg";
-import token from "../../assets/images/token.jpg";
+import comm from "../../assets/images/comm.png";
+import analysis from "../../assets/images/analysis.png";
+import cross from "../../assets/images/cross.png";
+import risk from "../../assets/images/risk.png";
+import token from "../../assets/images/token.png";
 import manage from "../../assets/images/manage.png";
 
 export const Features = () => {
   return (
     <Wrapper>
       <TitleBar>Features</TitleBar>
-      <SubTitle variant="h2">Key Features</SubTitle>
+      <SubTitle variant="h2" sx={{ textAlign: "center" }}>
+        Key Features
+      </SubTitle>
 
       <FeaturesCardWrapper>
         {[

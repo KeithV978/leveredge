@@ -7,7 +7,7 @@ import Divider from "@mui/material/Divider";
 // import IconButton from "@mui/material/IconButton";
 // import Telegram from "@mui/icons-material/Telegram";
 // import X from "@mui/icons-material/X";
-import logo from "../../assets/images/logo/logo.jpg";
+import logo from "../../assets/images/logo/logo.png";
 
 export const Footer = () => {
   return (

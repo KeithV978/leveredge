@@ -91,3 +91,9 @@ export const RStars = styled("div")(({ theme }) => ({
   backgroundImage: `url('${rstars}')`,
   [theme.breakpoints.up("sm")]: {},
 }));
+export const StyledImage = styled("img")(({ theme }) => ({
+  maxWidth: "100px",
+  [theme.breakpoints.up("sm")]: {
+    maxWidth: "100%",
+  },
+}));

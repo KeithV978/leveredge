@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Img, Ul, Wrapper } from "./styles";
 import { Button } from "../button";
-import logo from "../../assets/images/logo/logo.jpg";
+import logo from "../../assets/images/logo/logo.png";
 import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";

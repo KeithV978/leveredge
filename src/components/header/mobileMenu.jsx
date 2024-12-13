@@ -3,39 +3,47 @@ import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
 import Divider from "@mui/material/Divider";
+import Stack from "@mui/material/Stack";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import BookRounded from "@mui/icons-material/MenuBookOutlined";
-import StartRounded from "@mui/icons-material/StartRounded";
+import BlurOnRounded from "@mui/icons-material/BlurOnRounded";
 import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
-import { DASH } from "../../utils/links";
+// import { DASH } from "../../utils/links";
+import logo from "../../assets/images/logo/logo.png";
 
 export const MobileNav = ({ menuOpen, toggleDrawer }) => {
   return (
     <Drawer anchor="left" open={menuOpen} onClose={() => toggleDrawer(false)}>
       <Box
-        sx={{ width: 250, height: "100vh", backgroundColor: "primary.main" }}
+        sx={{ width: 250, height: "100vh", backgroundColor: "#222222" }}
         role="presentation"
         onClick={() => toggleDrawer(!menuOpen)}
         onKeyDown={() => toggleDrawer(!menuOpen)}
       >
-        <Typography variant="h5" padding="1rem">
-          <Link to="/">EthBomb</Link>
-        </Typography>
+        <Stack direction="row" alignItems="center">
+          <img src={logo} alt="logo" style={{ width: "50px" }} />
+          <Typography variant="h6" padding="1rem">
+            <Link to="/" sx={{ color: "#fff" }}>
+              LeverEdge AI
+            </Link>
+          </Typography>
+        </Stack>
         <Divider />
         <List>
           {[
-            { text: "Dashboard", icon: <BookRounded />, link: DASH },
-            { text: "Documentation", icon: <BookRounded />, link: "/" },
-            { text: "Get Started", icon: <StartRounded />, link: "/" },
+            { text: "About", icon: <BlurOnRounded />, link: "/about" },
+            { text: "Features", icon: <BlurOnRounded />, link: "/features" },
+            { text: "Roadmap", icon: <BlurOnRounded />, link: "/roadmap" },
           ].map((item, index) => (
             <ListItem key={index} disablePadding>
-              <Link to={item.link}>
+              <Link to={item.link} sx={{ color: "#fff" }}>
                 <ListItemButton>
-                  <ListItemIcon>{item.icon}</ListItemIcon>
+                  <ListItemIcon sx={{ color: "#fff" }}>
+                    {item.icon}
+                  </ListItemIcon>
                   <ListItemText primary={item.text} />
                 </ListItemButton>
               </Link>

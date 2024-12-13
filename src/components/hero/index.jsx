@@ -10,6 +10,7 @@ import {
   // SuperText,
   TextWrapper,
   Wrapper,
+  StyledImage,
 } from "./styles";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
@@ -56,7 +57,7 @@ export const Hero = () => {
             src={hero}
             alt="hero"
             style={{
-              animation: "scaler 5s infinite",
+              animation: "scaler 5.5s infinite",
               // position: "absolute",
               // top: "50%",
               // left: "50%",
@@ -71,7 +72,7 @@ export const Hero = () => {
             src={circle1}
             alt="first circle"
             style={{
-              animation: "clockrotate 3.6s infinite ease-in-out",
+              animation: "clockrotate 4s infinite ease-in-out",
             }}
           />
         </FirstCircleWrapper>
@@ -80,7 +81,7 @@ export const Hero = () => {
             src={circle2}
             alt="second circle"
             style={{
-              animation: "anticlockrotate 3s infinite ease-in-out",
+              animation: "anticlockrotate 3.5s infinite ease-in-out",
             }}
           />
         </SecondCircleWrapper>
@@ -162,27 +163,56 @@ export const Hero = () => {
           sx={{
             listStyle: "none",
             display: "flex",
-            flexDirection: { xs: "column", sm: "row" },
+            flexDirection: "row",
             justifyContent: "space-between",
+            alignItems: "center",
+            padding: 0,
             "& li": {
-              padding: "0 1rem",
+              padding: { sm: "0 1rem", xs: "0 .5rem" },
+              width: { sm: "220px", xs: "fit-content" },
             },
           }}
         >
           <li>
-            <img src={uniswap} alt="uniswap" />
+            <StyledImage src={uniswap} alt="uniswap" />
           </li>
           <li>
-            <img src={eth} alt="eth" />
+            <StyledImage src={eth} alt="eth" />
           </li>
           <li>
-            <img src={dex} alt="dex" />
+            <StyledImage src={dex} alt="dex" />
           </li>
           <li>
-            <img src={coin} alt="coin" />
+            <StyledImage src={coin} alt="coin" />
           </li>
         </Box>
       </Box>
+      <div
+        style={{
+          position: "absolute",
+          zIndex: -1,
+          width: "15rem",
+          height: "15rem",
+          bottom: "3rem",
+          left: "-18rem",
+          filter: "blur(100px)",
+          borderRadius: "50%",
+          backgroundColor: "#8b44fa",
+        }}
+      ></div>
+      {/* <div
+        style={{
+          position: "absolute",
+          zIndex: -1,
+          width: "5rem",
+          height: "20rem",
+          top: "3rem",
+          right: "1rem",
+          filter: "blur(108px)",
+          borderRadius: "50%",
+          backgroundColor: "#7f3be",
+        }}
+      ></div> */}
     </Wrapper>
   );
 };
