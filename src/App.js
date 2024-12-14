@@ -8,6 +8,7 @@ import { Footer } from "./components/footer";
 import { JoinUs } from "./components/joinus";
 import ScrollToTop from "./components/scrollToTop";
 import { About } from "./components/about";
+import { Roadmap } from "./components/roadmap";
 
 function App() {
   document.title = "LeverEdgeAI - Welcome";
@@ -22,6 +23,7 @@ function App() {
         <Hero />
         <About />
         <Features />
+        <Roadmap />
         <JoinUs />
       </main>
       <Footer />

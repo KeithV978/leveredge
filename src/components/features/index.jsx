@@ -24,7 +24,19 @@ export const Features = () => {
     <Wrapper>
       <TitleBar>Features</TitleBar>
       <SubTitle variant="h2" sx={{ textAlign: "center" }}>
-        Key Features
+        Key{" "}
+        <span
+          style={{
+            background: `linear-gradient(89.9deg, #02C3FA -1.07%, #0163D6 39.04%, #02C7FC 70.22%, #1634CA 101.56%)`,
+            backgroundClip: "text",
+            webkitBackgroundClip: "text",
+            webkitTextTillColor: "transparent",
+            color: "transparent",
+          }}
+        >
+          {" "}
+          Features
+        </span>
       </SubTitle>
 
       <FeaturesCardWrapper>

@@ -44,7 +44,7 @@ export const Footer = () => {
           <Stack gap={2} direction="column" sx={{ color: "#8d8d8d" }}>
             <Typography
               variant="body2"
-              sx={{ color: "#fff", marginBottom: "1rem" }}
+              sx={{ color: "#fff", margin: "1rem 0" }}
             >
               Company
             </Typography>
@@ -55,7 +55,7 @@ export const Footer = () => {
           <Stack gap={2} direction="column" sx={{ color: "#8d8d8d" }}>
             <Typography
               variant="body2"
-              sx={{ color: "#fff", marginBottom: "1rem" }}
+              sx={{ color: "#fff", margin: "1rem 0" }}
             >
               Support
             </Typography>
@@ -65,7 +65,7 @@ export const Footer = () => {
           <Stack gap={2} direction="column" sx={{ color: "#8d8d8d" }}>
             <Typography
               variant="body2"
-              sx={{ color: "#fff", marginBottom: "1rem" }}
+              sx={{ color: "#fff", margin: "1rem 0" }}
             >
               Policy
             </Typography>
@@ -76,7 +76,7 @@ export const Footer = () => {
           <Stack gap={2} direction="column" sx={{ color: "#8d8d8d" }}>
             <Typography
               variant="body2"
-              sx={{ color: "#fff", marginBottom: "1rem" }}
+              sx={{ color: "#fff", margin: "1rem 0" }}
             >
               Contact
             </Typography>
@@ -89,7 +89,7 @@ export const Footer = () => {
       <Divider sx={{ borderColor: "rgba(250, 255, 255, .1)" }} />
       <Box sx={{ padding: "2rem 0", textAlign: "center" }}>
         <Typography variant="body2">
-          Copyright © 2024 AI Sentinel Network. All Rights Reserved
+          Copyright © 2024 LeverEdgeAI. All Rights Reserved
         </Typography>
       </Box>
     </>
