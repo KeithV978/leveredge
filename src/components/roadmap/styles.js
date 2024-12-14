@@ -35,7 +35,10 @@ export const CardWrapper = styled("div")(({ theme }) => ({
 export const Card = styled("div")(({ theme }) => ({
   maxWidth: "260px",
   minWidth: "250px",
-  borderRadius: "25px",
+  borderBottomLeftRadius: "25px",
+  borderTopRightRadius: "25px",
+  borderBottomRightRadius: "5px",
+  borderTopLeftRadius: "5px",
   //   display: "inline-block",
   //   border: "1px solid #ccc",
   padding: "1rem",
