@@ -10,14 +10,16 @@ import {
 } from "./styles";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-
 import logo from "../../assets/images/logo/logo.png";
+import vid from "../../assets/video/about.mp4";
+import { AboutVideo } from "./aboutVideo";
+// import ReactPlayer from "react-player";
 
 export const About = () => {
   return (
     <Wrapper>
       <ImageWrapper>
-        <img src={logo} alt="lgo" width="100%" />
+        <AboutVideo src={vid} poster={logo} />
       </ImageWrapper>
       <Box
         sx={{

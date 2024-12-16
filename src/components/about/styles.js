@@ -7,9 +7,12 @@ export const Wrapper = styled("section")(({ theme }) => ({
   flexDirection: "column",
   justifyContent: "center",
   alignItems: "center",
+  gap: "3rem",
+  marginBottom: "5rem",
   [theme.breakpoints.up("sm")]: {
+    gap: "5rem",
     flexDirection: "row",
-    justifyContent: "right",
+    // justifyContent: "right",
   },
 }));
 export const TitleBar = styled(Typography)(({ theme }) => ({
@@ -26,9 +29,11 @@ export const SubTitle = styled(Typography)(({ theme }) => ({
 }));
 
 export const ImageWrapper = styled("div")(({ theme }) => ({
-  width: "15%",
-  display: "none",
+  width: "100%",
+  // borderRadius: "15px",
+  padding: "1rem",
   [theme.breakpoints.up("sm")]: {
-    display: "block",
+    borderRight: "2px solid #ccc",
+    width: "800px",
   },
 }));

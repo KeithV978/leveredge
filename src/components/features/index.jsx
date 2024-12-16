@@ -29,8 +29,8 @@ export const Features = () => {
           style={{
             background: `linear-gradient(89.9deg, #02C3FA -1.07%, #0163D6 39.04%, #02C7FC 70.22%, #1634CA 101.56%)`,
             backgroundClip: "text",
-            webkitBackgroundClip: "text",
-            webkitTextTillColor: "transparent",
+            WebkitBackgroundClip: "text",
+            WebkitTextTillColor: "transparent",
             color: "transparent",
           }}
         >

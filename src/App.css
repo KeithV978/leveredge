@@ -44,3 +44,10 @@ img {
     scale: 1;
   }
 }
+
+.about_vid {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+}
