@@ -72,7 +72,7 @@ export const Hero = () => {
             src={circle1}
             alt="first circle"
             style={{
-              animation: "clockrotate 4s infinite ease-in-out",
+              animation: "clockrotate 5s infinite ease-in-out",
             }}
           />
         </FirstCircleWrapper>
@@ -81,7 +81,7 @@ export const Hero = () => {
             src={circle2}
             alt="second circle"
             style={{
-              animation: "anticlockrotate 3.5s infinite ease-in-out",
+              animation: "anticlockrotate 4.5s infinite ease-in-out",
             }}
           />
         </SecondCircleWrapper>

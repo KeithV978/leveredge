@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  ImageWrapper,
+  VideoWrapper,
   // Item,
   // ItemBody,
   // ItemHeader,
@@ -18,16 +18,9 @@ import { AboutVideo } from "./aboutVideo";
 export const About = () => {
   return (
     <Wrapper id="about">
-      <ImageWrapper>
+      <VideoWrapper>
         <AboutVideo src={vid} poster={logo} />
-        {/* <video
-          src={vid}
-          preload="metadata"
-          className="about_vid"
-          alt="about"
-          controls
-        /> */}
-      </ImageWrapper>
+      </VideoWrapper>
       <Box
         sx={{
           width: { sm: "60%", xs: "100%" },

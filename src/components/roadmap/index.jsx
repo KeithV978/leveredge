@@ -45,7 +45,7 @@ export const Roadmap = () => {
             display: "flex",
             flexDirection: "row",
             gap: "2rem",
-            padding: "1rem 0",
+            padding: "2rem 0",
             overflowX: "auto",
             // scrollbarWidth: "10px",
             // scrollbarColor: `linear-gradient(89.9deg, #02C3FA -1.07%, #0163D6 39.04%, #02C7FC 70.22%, #1634CA 101.56%)`,

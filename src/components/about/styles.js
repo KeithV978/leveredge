@@ -28,7 +28,7 @@ export const SubTitle = styled(Typography)(({ theme }) => ({
   marginBottom: "1rem",
 }));
 
-export const ImageWrapper = styled("div")(({ theme }) => ({
+export const VideoWrapper = styled("div")(({ theme }) => ({
   width: "100%",
   // borderRadius: "15px",
   padding: "1rem",

@@ -36,6 +36,8 @@ export const AboutVideo = ({
       alt={alt}
       controls
       className="about_vid"
+      autoplay={false}
+      loop
     >
       {isVisible && <source src={src} type="video/mp4" />}
     </video>
