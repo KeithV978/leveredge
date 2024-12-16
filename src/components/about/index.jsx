@@ -20,6 +20,13 @@ export const About = () => {
     <Wrapper id="about">
       <ImageWrapper>
         <AboutVideo src={vid} poster={logo} />
+        {/* <video
+          src={vid}
+          preload="metadata"
+          className="about_vid"
+          alt="about"
+          controls
+        /> */}
       </ImageWrapper>
       <Box
         sx={{

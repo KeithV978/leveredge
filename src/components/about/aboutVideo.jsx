@@ -34,7 +34,6 @@ export const AboutVideo = ({
       preload={preload}
       poster={poster}
       alt={alt}
-      src={isVisible ? src : ""}
       controls
       className="about_vid"
     >
