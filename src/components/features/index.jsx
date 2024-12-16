@@ -21,7 +21,7 @@ import manage from "../../assets/images/manage.png";
 
 export const Features = () => {
   return (
-    <Wrapper>
+    <Wrapper id="features">
       <TitleBar>Features</TitleBar>
       <SubTitle variant="h2" sx={{ textAlign: "center" }}>
         Key{" "}

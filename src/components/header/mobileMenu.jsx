@@ -34,9 +34,9 @@ export const MobileNav = ({ menuOpen, toggleDrawer }) => {
         <Divider />
         <List>
           {[
-            { text: "About", icon: <BlurOnRounded />, link: "/about" },
-            { text: "Features", icon: <BlurOnRounded />, link: "/features" },
-            { text: "Roadmap", icon: <BlurOnRounded />, link: "/roadmap" },
+            { text: "About", icon: <BlurOnRounded />, link: "#about" },
+            { text: "Features", icon: <BlurOnRounded />, link: "#features" },
+            { text: "Roadmap", icon: <BlurOnRounded />, link: "#roadmap" },
           ].map((item, index) => (
             <ListItem key={index} disablePadding>
               <Link to={item.link} sx={{ color: "#fff" }}>
@@ -44,7 +44,7 @@ export const MobileNav = ({ menuOpen, toggleDrawer }) => {
                   <ListItemIcon sx={{ color: "#fff" }}>
                     {item.icon}
                   </ListItemIcon>
-                  <ListItemText primary={item.text} />
+                  <ListItemText sx={{ color: "#fff" }} primary={item.text} />
                 </ListItemButton>
               </Link>
             </ListItem>

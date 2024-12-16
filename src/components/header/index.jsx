@@ -1,11 +1,12 @@
 import * as React from "react";
 import { Img, Ul, Wrapper } from "./styles";
-import { Button } from "../button";
+
 import logo from "../../assets/images/logo/logo.png";
 import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-// import IconButton from "@mui/material/IconButton";
+import Button from "@mui/material/Button";
+import Link from "@mui/material/Link";
 // import Telegram from "@mui/icons-material/Telegram";
 // import X from "@mui/icons-material/X";
 // import BookRounded from "@mui/icons-material/MenuBookOutlined";
@@ -44,16 +45,31 @@ export const Header = () => {
 
           <Ul>
             <li>
-              <Typography>About</Typography>
+              <Link href="#about">
+                <Typography color="#fff">About</Typography>
+              </Link>
             </li>
             <li>
-              <Typography>Features</Typography>
+              <Link href="#features">
+                <Typography color="#fff">Features</Typography>
+              </Link>
             </li>
             <li>
-              <Typography>Roadmap</Typography>
+              <Link href="#roadmap">
+                <Typography color="#fff">Roadmap</Typography>
+              </Link>
             </li>
           </Ul>
-          <Button bgColor="primary.main" color="#fff" border="none">
+          <Button
+            variant="contained"
+            href="https://app.leveredgeai.io"
+            sx={{
+              backgroundColor: "primary.main",
+              color: "#fff",
+              border: "none",
+              borderRadius: "25px",
+            }}
+          >
             Try Bot
           </Button>
           <Box sx={{ display: { sm: "none", xs: "block" } }}>

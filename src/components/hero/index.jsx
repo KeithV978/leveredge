@@ -15,14 +15,14 @@ import {
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import Link from "@mui/material/Link";
+// import Link from "@mui/material/Link";
 import Button from "@mui/material/Button";
 import MuiBtn from "@mui/material/Button";
 // import { Button } from "../button";
 // import tron_hand from "../../assets/images/hero/hero_.png";
 // import Container from "@mui/material/Container";
 
-import { BOT_LINK, DASH } from "../../utils/links";
+// import { BOT_LINK } from "../../utils/links";
 // import { useTheme } from "@mui/material";
 import hero from "../../assets/images/hero/hero1.jpg";
 
@@ -111,24 +111,24 @@ export const Hero = () => {
           flexDirection: "row",
         }}
       >
-        <Link href={BOT_LINK}>
-          <Button
-            variant="contained"
-            sx={{
-              backgroundColor: "primary.main",
-              color: "#ccc",
-              borderRadius: "25px",
-              height: "3rem",
-              paddingLeft: "2rem",
-              paddingRight: "2rem",
-            }}
-          >
-            Try Bot
-          </Button>
-        </Link>
+        <Button
+          href="https://app.leveredgeai.io"
+          variant="contained"
+          sx={{
+            backgroundColor: "primary.main",
+            color: "#ccc",
+            borderRadius: "25px",
+            height: "3rem",
+            paddingLeft: "2rem",
+            paddingRight: "2rem",
+          }}
+        >
+          Try Bot
+        </Button>
+
         <MuiBtn
           variant="outlined"
-          href={DASH}
+          href="https://app.leveredgeai.io"
           sx={{
             backgroundColor: "#fff",
             height: "3rem",
@@ -136,7 +136,6 @@ export const Hero = () => {
             borderRadius: "25px",
             paddingLeft: "2rem",
             paddingRight: "2rem",
-            textTransform: "capitalize",
           }}
         >
           Buy Now

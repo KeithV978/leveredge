@@ -17,7 +17,7 @@ import { AboutVideo } from "./aboutVideo";
 
 export const About = () => {
   return (
-    <Wrapper>
+    <Wrapper id="about">
       <ImageWrapper>
         <AboutVideo src={vid} poster={logo} />
       </ImageWrapper>

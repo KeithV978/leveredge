@@ -18,7 +18,7 @@ import BlurOnRounded from "@mui/icons-material/BlurOnRounded";
 
 export const Roadmap = () => {
   return (
-    <Wrapper>
+    <Wrapper id="roadmap">
       <div>
         <TitleBar>Roadmap</TitleBar>
         <SubTitle variant="h2">

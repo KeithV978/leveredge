@@ -3,11 +3,10 @@ import { ConnectButtonWrapper, Title, Wrapper } from "./styles";
 
 // import { WalletWalletConnect } from "@web3icons/react";
 // import LinkRounded from "@mui/icons-material/RocketLaunchRounded";
-import Link from "@mui/material/Link";
+// import Link from "@mui/material/Link";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
-import { BOT_LINK } from "../../utils/links";
 
 export const JoinUs = () => {
   return (
@@ -42,34 +41,33 @@ export const JoinUs = () => {
         </Title>
       </Box>
       <ConnectButtonWrapper>
-        <Link href={BOT_LINK} sx={{ textDecoration: "none" }}>
-          <Button
-            fullWidth
-            variant="contained"
-            sx={{
-              backgroundColor: "primary.main",
-              color: "#fff",
-              borderRadius: "25px",
-              height: "3rem",
-            }}
-          >
-            Join Community
-          </Button>
-        </Link>
-        <Link href={BOT_LINK} sx={{ textDecoration: "none" }}>
-          <Button
-            fullWidth
-            variant="contained"
-            sx={{
-              backgroundColor: "#fff",
-              color: "#1c1c1c",
-              borderRadius: "25px",
-              height: "3rem",
-            }}
-          >
-            Buy Now
-          </Button>
-        </Link>
+        <Button
+          fullWidth
+          href="https://app.leveredgeai.io"
+          variant="contained"
+          sx={{
+            backgroundColor: "primary.main",
+            color: "#fff",
+            borderRadius: "25px",
+            height: "3rem",
+          }}
+        >
+          Join Community
+        </Button>
+
+        <Button
+          fullWidth
+          href="https://app.leveredgeai.io"
+          variant="contained"
+          sx={{
+            backgroundColor: "#fff",
+            color: "#1c1c1c",
+            borderRadius: "25px",
+            height: "3rem",
+          }}
+        >
+          Buy Now
+        </Button>
       </ConnectButtonWrapper>
     </Wrapper>
     // </div>

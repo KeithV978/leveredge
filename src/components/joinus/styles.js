@@ -4,9 +4,9 @@ import Typography from "@mui/material/Typography";
 
 export const Wrapper = styled("section")(({ theme }) => ({
   margin: "5rem 1rem",
-  padding: "1rem 2rem",
+  padding: "2rem",
   textAlign: "center",
-  justifyContent: "space-between",
+  justifyContent: "space-evenly",
   backgroundColor: "#443f527d",
   borderRadius: "10px",
   display: "flex",
@@ -29,17 +29,22 @@ export const Wrapper = styled("section")(({ theme }) => ({
     zIndex: -1,
   },
   [theme.breakpoints.up("sm")]: {
+    justifyContent: "space-between",
     padding: "4rem 6rem",
     minHeight: "150px",
     flexDirection: "row",
     backgroundSize: "100%",
     borderRadius: "20px",
+    textAlign: "left",
   },
 }));
 export const Title = styled(Typography)(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
+  [theme.breakpoints.up("sm")]: {
+    alignItems: "start",
+  },
 }));
 export const ConnectButtonWrapper = styled("div")(({ theme }) => ({
   display: "flex",
